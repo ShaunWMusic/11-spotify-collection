@@ -1,6 +1,3 @@
-import './data';
-import data from './model-module';
-
 export default class view {
   constructor(model) {
     this.model = model;
@@ -12,8 +9,6 @@ export default class view {
       <img src="" class="track__img" alt="">
       <h2 class="track__artist"></h2>
       <h4 class="track_name"><a class="track__link" href=""></a></h4>
-
-
       </div>`;
   }
   render() {
