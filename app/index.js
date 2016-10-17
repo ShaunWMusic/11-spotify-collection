@@ -8,4 +8,6 @@ console.log(data['tracks']);
 data['tracks'].items.forEach((track) => {
   const c = new model(track);
   const t = new view(model);
+  debugger;
+  view.render();
 });

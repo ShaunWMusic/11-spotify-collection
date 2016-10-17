@@ -3,7 +3,7 @@ export default class view {
     this.model = model;
 
     this.track = document.createElement('div');
-    this.track.classList.add('panel-block, track');
+    this.track.classList.add('.panel-block .track');
     this.track.innerHTML = `
       <div class="panel-block track">
       <img src="" class="track__img" alt="">
