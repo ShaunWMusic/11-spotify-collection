@@ -1,6 +1,5 @@
 export default class View {
   constructor(model) {
-    debugger;
     this.model = model;
     this.track = document.createElement('div');
     this.track.classList.add('div'['panel-block track']);
