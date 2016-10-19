@@ -5,5 +5,6 @@ export default class Model {
     this.name = track.name;
     this.image = track.album.images[0].url;
     this.url = track.external_urls.spotify;
+    // console.log(this.image);
   }
 }

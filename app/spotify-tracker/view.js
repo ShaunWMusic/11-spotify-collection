@@ -6,7 +6,7 @@ export default class View {
     this.track.classList.add('track');
     this.track.innerHTML = `
       <img src="" class="track__img" alt="">
-      <div class"content">
+      <div class"panel-block__content">
       <h2 class="track__artist"></h2>
       <h4 class="track__name"></h4>
       </div>
@@ -18,7 +18,7 @@ export default class View {
     // changed from a simple function.
     this.track.querySelector('.track__artist').innerText = this.model.artist;
     this.track.querySelector('.track__name').innerText = this.model.name;
-    this.track.querySelector('.track__img').src = this.model.images;
+    this.track.querySelector('.track__img').src = this.model.image;
     this.track.querySelector('.track__link').href = this.model.url;
   }
 }
