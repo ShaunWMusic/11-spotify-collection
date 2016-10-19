@@ -19,6 +19,7 @@ $white: hsl(0, 0%, 21%);
 
 
 .panel {
+  overflow: auto;
 
   &-block {
     display: flex;
