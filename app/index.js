@@ -15,4 +15,5 @@ data.tracks.items.forEach((item) => {
 
   const results = document.querySelector('.results');
   results.appendChild(view.track);
+  view.render();
 });
