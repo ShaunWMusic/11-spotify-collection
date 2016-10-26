@@ -5,14 +5,22 @@ export default class View {
     this.track.classList.add('panel-block');
     this.track.classList.add('track');
     this.track.innerHTML = `
-      <img src="" class="track__img" alt="">
-      <div class"panel-block__content">
-      <h2 class="track__artist"></h2>
-      <h4 class="track__name"></h4>
-      </div>
-      <div class="spotify">
-      <a class="track__link" href=""></a>
-      </div>`;
+    <div class="media">
+       <div class="media-left">
+         <div class="track__frame">
+           <img class="track__img" src="" alt="">
+         </div>
+       </div>
+       <div class="media-content">
+         <h2 class="track__artist"></h2>
+         <h4 class="track__name"></h4>
+       </div>
+       <div class="media-right">
+         <div class="track__url">
+           <a class="track__link">
+             <span class="fa fa-spotify fa-3x"></span>
+           </a>
+         </div>`;
   }
   render() {
     // changed from a simple function.

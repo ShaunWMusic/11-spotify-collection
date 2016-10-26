@@ -10,61 +10,46 @@ $white: hsl(0, 0%, 21%);
 @import 'font-awesome/scss/font-awesome';
 
 .page {
-  height: 100vh;
-  overflow: auto;
+ height: 100vh;
+ overflow: hidden;
 
-  display: flex;
-  flex-direction: column;
+ display: flex;
+ flex-direction: column;
 }
 
-
 .panel {
-  overflow: auto;
+ display: flex;
+ flex-direction: column;
 
-  &-block {
-    display: flex;
-    // flex-direction: column;
-    color: #fff;
-  }
-
-    &-block h2 {
-      margin: 0 0 0 1rem;
-    }
-    &-block h4 {
-      margin: 0 0 0 1rem;
-    }
+ &-block {
+   color: #fff;
+ }
 }
 
 .results {
-  overflow: scroll;
+ overflow: scroll;
 }
 
 .track {
-  &__media {
-    @extend .media-left;
-  }
+ &__media {
+   @extend .media-left;
+ }
 
-  &__frame {
-    @extend .image.is-64x64;
-  }
+ &__frame {
+   @extend .image.is-64x64;
+ }
 
-  &__artist {
-    @extend .title;
-    @extend .title.is-4;
+ &__artist {
+   @extend .title;
+   @extend .title.is-4;
 
-    color: #fff;
-  }
+   color: #fff;
+ }
 
-  &__name {
-    @extend .title;
-    @extend .subtitle;
+ &__name {
+   @extend .title;
+   @extend .subtitle;
 
-    color: #fff;
-  }
-
-  &__img {
-    width: 3rem;
-    height: 100%;
-    object-fit: cover;
-  }
+   color: #fff;
+ }
 }
